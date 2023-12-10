@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tree {
+  line-height: 0.1;
+  font-size: 3em;
+}
+
+.trunk {
+  line-height: 0.1;
+  font-size: 3em;
+}
+
+.tree > span {
+  animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange {
+  0% { color: red; }
+  25% { color: green; }
+  50% { color: yellow; }
+  75% { color: blue; }
+  100% { color: purple; }
+}
